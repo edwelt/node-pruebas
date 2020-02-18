@@ -1,0 +1,11 @@
+{
+  "name": "02-fastify",
+  "version": "1.0.0",
+  "description": "api rest ejemplar",
+  "main": "index.js",
+  "author": "Edmundo",
+  "license": "MIT",
+  "dependencies": {
+    "fastify": "^2.12.0"
+  }
+}
