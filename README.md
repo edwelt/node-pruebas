@@ -20,6 +20,17 @@ yarn -v
 == crear proyecto
 mkdir 02-fastity & cd fastify
 yarn init
-== agregar dependencia
-yarn add fastify
+== agregar dependencias fastify, typescript
+yarn add fastify typescript 
+== agregar dependencia ts-node-dev en desarrollo 
+yarn add -D ts-node-dev
+ts-node-dev transpila typescript y permite hot reload
+== Para que typescript detecte los tipings de node:
+yarn add @types/node
+== en package.json agregar scripts
+  "scripts": {
+    "start": "node build/server3.js",  //ejecuta en produccion transpilado a js
+    "build": "tsc -p tsconfig.json", //compila todos los ts
+    "dev": "ts-node-dev server3.js" //para desarrollo, transpila ejecuta y hot reload
+  }
 

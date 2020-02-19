@@ -6,6 +6,14 @@
   "author": "Edmundo",
   "license": "MIT",
   "dependencies": {
-    "fastify": "^2.12.0"
+    "@types/node": "^13.7.2",
+    "fastify": "^2.12.0",
+    "ts-node-dev": "^1.0.0-pre.44",
+    "typescript": "^3.7.5"
+  },
+  "scripts": {
+    "start": "node build/server3.js",
+    "build": "tsc -p tsconfig.json",
+    "dev": "ts-node-dev server3.js"
   }
 }
